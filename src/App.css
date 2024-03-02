@@ -1,3 +1,21 @@
+.bgimg1 {
+  background-image: url('../public/desktopbg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
+@media (max-width: 576px) {
+  .bgimg1 {
+    background-image: url('../public/mobilebg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    /* height: 100vh; */
+  }
+}
+
 .App {
   text-align: center;
 }
