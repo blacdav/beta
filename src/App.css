@@ -1,5 +1,19 @@
-.App {
-  text-align: center;
+.bgimg1 {
+  background-image: url('../src/pages/IMG/desktopbg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
+@media (max-width: 576px) {
+  .bgimg1 {
+    background-image: url('../src/pages/IMG/mobilebg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+  }
 }
 
 .App-logo {
