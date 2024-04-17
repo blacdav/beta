@@ -1,23 +1,33 @@
 .bgimg1 {
-  background-image: url('../public/desktopbg.jpg');
+  background-image: url('../src/IMG/desktopbg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   height: 100vh;
 }
 
+.bgimg2 {
+  background-image: url('../src/IMG/signupbg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
+.clip-box {
+  clip-path: circle(50% at 50% 50%);
+  height: 80vh;
+  background-color: red;
+}
+
 @media (max-width: 576px) {
   .bgimg1 {
-    background-image: url('../public/mobilebg.png');
+    background-image: url('../src/IMG/mobilebg.png');
     background-size: cover;
     background-repeat: no-repeat;
     /* background-position: center; */
     /* height: 100vh; */
   }
-}
-
-.App {
-  text-align: center;
 }
 
 .App-logo {
