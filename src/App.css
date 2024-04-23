@@ -3,6 +3,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
   height: 100vh;
 }
 
@@ -11,6 +12,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
   height: 100vh;
 }
 
@@ -25,8 +27,9 @@
     background-image: url('../src/IMG/mobilebg.png');
     background-size: cover;
     background-repeat: no-repeat;
-    /* background-position: center; */
-    /* height: 100vh; */
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
   }
 }
 

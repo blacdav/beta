@@ -1,8 +1,6 @@
 import React from 'react'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-// const bootstrap = require('bootstrap')
-// import bootstrap from 'bootstrap';
 import '../App.css';
 import { Link } from 'react-router-dom';
 import logo from '../IMG/logo.svg'
@@ -25,7 +23,7 @@ const Landing = () => {
 
           <div className='d-flex align-items-baseline'>
             <img src={search} alt="..." width={20} />
-            <Link to='/connect' className='btn text-light py-2 px-3 ms-5 h-5  border-2 border-primary bg-transparent rounded-5'><img src={wallet} alt="..." /> Wallet Connect</Link>
+            <Link to='connect' className='btn text-light py-2 px-3 ms-5 h-5  border-2 border-primary bg-transparent rounded-5'><img src={wallet} alt="..." /> Wallet Connect</Link>
           </div>
         </header>
       </div>
@@ -38,8 +36,8 @@ const Landing = () => {
             educational archievements.
           </p>
           <div>
-            <Link to='/signup' className='btn text-light px-4 py-1 me-4 border-2 border-primary bg-transparent rounded-5'> Sign Up</Link>
-            <Link to='/login' className='btn text-light px-4 py-1 border-2 border-primary bg-transparent rounded-5'> Login</Link>
+            <Link to='signup' className='btn text-light px-4 py-1 me-4 border-2 border-primary bg-transparent rounded-5'> Sign Up</Link>
+            <Link to='login' className='btn text-light px-4 py-1 border-2 border-primary bg-transparent rounded-5'> Login</Link>
           </div>
         </div>
 
