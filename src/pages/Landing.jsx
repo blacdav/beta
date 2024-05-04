@@ -1,5 +1,4 @@
 import React from 'react'
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../App.css';
 import { Link } from 'react-router-dom';
@@ -7,6 +6,8 @@ import logo from '../IMG/logo.svg'
 import wallet from '../IMG/solar_wallet-linear.svg'
 import wolf from '../IMG/wolf.svg'
 import search from '../IMG/tabler_search.svg'
+import logout from '../IMG/ion_rocket-sharp.svg'
+import login from '../IMG/login.svg'
 
 const Landing = () => {
   return (
@@ -36,8 +37,8 @@ const Landing = () => {
             educational archievements.
           </p>
           <div>
-            <Link to='signup' className='btn text-light px-4 py-1 me-4 border-2 border-primary bg-transparent rounded-5'> Sign Up</Link>
-            <Link to='login' className='btn text-light px-4 py-1 border-2 border-primary bg-transparent rounded-5'> Login</Link>
+            <Link to='signup' className='btn text-light px-4 py-1 me-4 border-2 border-primary bg-transparent rounded-5'><img src={logout} alt="..." /> Sign Up</Link>
+            <Link to='login' className='btn text-light px-4 py-1 border-2 border-primary bg-transparent rounded-5'><img src={login} alt="..." /> Login</Link>
           </div>
         </div>
 

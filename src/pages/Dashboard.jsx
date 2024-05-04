@@ -10,7 +10,6 @@ const Dashboard = () => {
       const res = await fetch(url)
       const data = await res.json()
       setUsers(data)
-      console.log(data)
     }
     GetUser()
   }, [])

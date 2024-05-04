@@ -17,8 +17,9 @@
 }
 
 .clip-box {
-  clip-path: circle(50% at 50% 50%);
-  height: 80vh;
+  --c: 23%;
+  aspect-ratio: 1;
+  mask: radial-gradient(var(--c) 55% at left, #0000 calc(100% - 1px), #000);
   background-color: red;
 }
 
