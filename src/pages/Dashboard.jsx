@@ -1,15 +1,25 @@
 import React, {useState, useEffect} from 'react'
 
-const url = 'https://jsonplaceholder.typicode.com/users'
+const url = process.env.REACT_APP_API_URL;
 
 const Dashboard = () => {
   const [users, setUsers] = useState([])
 
   useEffect(() => {
     const GetUser = async () => {
-      const res = await fetch(url)
-      const data = await res.json()
-      setUsers(data)
+      try {
+        const res = await fetch(url)
+
+        if(res.status === 200){
+          const data = await res.json()
+          console.log("Success")
+          setUsers(data)
+        } else {
+          console.log('Server Error: ', res.status)
+        }
+      } catch (error) {
+        console.error('Error: ', error)
+      }
     }
     GetUser()
   }, [])

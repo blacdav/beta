@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Outlet } from 'react-router-dom'
 
-const url = 'https://jsonplaceholder.typicode.com/users'
+const url = process.env.REACT_APP_API_URL;
 
 const User = () => {
   const [users, setUsers] = useState([])

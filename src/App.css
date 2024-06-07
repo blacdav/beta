@@ -19,7 +19,7 @@
 .clip-box {
   --c: 23%;
   aspect-ratio: 1;
-  mask: radial-gradient(var(--c) 55% at left, #0000 calc(100% - 1px), #000);
+  mask: radial-gradient(var(--c) 53% at left, #0000 calc(100% - 1px), #000);
   background-color: red;
 }
 
@@ -32,17 +32,18 @@
     background-attachment: fixed;
     height: 100vh;
   }
+
+  .clip-box {
+    --c: 0;
+    aspect-ratio: 1;
+    mask: radial-gradient(var(--c) 53% at left, #0000 calc(100% - 1px), #000);
+    background-color: red;
+  }
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {

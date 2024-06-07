@@ -1,6 +1,6 @@
 import React from 'react'
-import 'bootstrap/dist/css/bootstrap.min.css';
 import '../App.css';
+import '../App.scss';
 import { Link } from 'react-router-dom';
 import logo from '../IMG/logo.svg'
 import wallet from '../IMG/solar_wallet-linear.svg'
