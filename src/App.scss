@@ -1,0 +1,14 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+$primary: #209ED9;
+$secondary: #EBEBEB !default;
+$success: red;
+$info: white;
+$warning: yellow;
+$danger: pink;
+$light: #FFFFFF;
+$dark: green;
+
+@import '~bootstrap/scss/_variables';
