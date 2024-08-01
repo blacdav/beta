@@ -37,8 +37,8 @@ const Landing = () => {
             educational archievements.
           </p>
           <div className='w-100 d-grid d-md-flex gap-2 gap-md-0'>
-            <Link to='signup' className='btn text-light px-4 py-1 me-md-4 border-2 border-primary bg-transparent rounded-5'><img src={logout} alt="..." /> Sign Up</Link>
-            <Link to='login' className='btn text-light px-4 py-1 border-2 border-primary bg-transparent rounded-5'><img src={login} alt="..." /> Login</Link>
+            <Link to='signup' className='btn text-light px-4 py-3 py-md-2 me-md-4 border-2 border-primary bg-transparent rounded-5'><img src={logout} alt="..." /> Sign Up</Link>
+            <Link to='login' className='btn text-light px-4 py-3 py-md-2 border-2 border-primary bg-transparent rounded-5'><img src={login} alt="..." /> Login</Link>
           </div>
         </div>
 
