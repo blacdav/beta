@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import "../App.scss";
-import "../App.css";
 import wolf from "../IMG/wolf.svg";
 import logo from "../IMG/logo.svg";
 import { Link } from "react-router-dom";
@@ -20,7 +18,7 @@ const Signup = () => {
       <div className="d-none d-md-grid w-25 h-100 align-items-center">
         <img src={wolf} alt="..." className="h-75" />
       </div>
-      <div className="container bg-secondary shadow clip-box h-100 py-3 px-4 px-md-5 rounded-3 d-flex flex-column align-items-end">
+      <div className="container bg-blue shadow clip-box h-100 py-3 px-3 px-md-5 rounded-3 d-flex flex-column align-items-end">
         <div className="row">
           <div className="col-md-2"></div>
           <div className="border-3 border-primary col-12 col-md-10 grid justify-items-center">

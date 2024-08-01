@@ -23,6 +23,10 @@
   background-color: red;
 }
 
+.borderh {
+  border-bottom: 2px solid blue;
+}
+
 @media (max-width: 576px) {
   .bgimg1 {
     background-image: url('../src/IMG/mobilebg.png');
@@ -39,6 +43,10 @@
     aspect-ratio: 1;
     mask: radial-gradient(var(--c) 53% at left, #0000 calc(100% - 1px), #000);
     background-color: red;
+  }
+
+  .borderh {
+    border: none;
   }
 }
 

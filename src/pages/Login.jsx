@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import '../App.css';
 import wolf from '../IMG/wolf.svg'
 
 const Login = () => {

@@ -1,6 +1,6 @@
 import React from 'react';
+import '../src/custombootstrap/color.scss';
 import './App.css';
-import './App.scss';
 import { Routes, Route } from 'react-router-dom'
 import Signup from './pages/Signup';
 import Login from './pages/Login';

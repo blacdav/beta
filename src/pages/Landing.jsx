@@ -1,6 +1,4 @@
 import React from 'react'
-import '../App.css';
-import '../App.scss';
 import { Link } from 'react-router-dom';
 import logo from '../IMG/logo.svg'
 import wallet from '../IMG/solar_wallet-linear.svg'
@@ -12,7 +10,7 @@ import login from '../IMG/login.svg'
 const Landing = () => {
   return (
     <div className="text-light w-100 overflow-hidden bgimg1">
-      <div className="container border-bottom-0 border-primary">
+      <div className="container-fluid borderh">
         <header className='d-flex justify-content-between align-items-baseline container pt-3 pb-4'>
           <img src={logo} alt="..." width={100} />
           <nav className='navbar-nav d-none d-md-flex flex-row gap-5 align-items-end overflow-hidde'>
@@ -24,7 +22,7 @@ const Landing = () => {
 
           <div className='d-flex align-items-baseline'>
             <img src={search} alt="..." width={20} />
-            <Link to='connect' className='btn text-light d-none d-sm-flex py-2 px-3 ms-5 h-5  border-2 border-primary bg-transparent rounded-5'><img src={wallet} alt="..." /> Wallet Connect</Link>
+            <Link to='connect' className='btn text-light d-none d-sm-flex gap-2 py-2 px-3 ms-5 h-5  border-2 border-primary bg-transparent rounded-5'><img src={wallet} alt="..." /> Wallet Connect</Link>
           </div>
         </header>
       </div>
