@@ -1,0 +1,19 @@
+// Include any default variable overrides here
+// $primary: green;
+// $secondary: blue;
+
+// import functions and utilities, so as to define my own custom colors
+@import '../../node_modules/bootstrap/scss/_functions';
+@import '../../node_modules/bootstrap/scss/_variables';
+
+// defining my custom theme colors
+$my-colors: (
+    'blue': #01A8F6,
+    'white': #67CBFA,
+);
+
+// the map-merge adds my cutom colors to theoriginal bootstrap colors
+$theme-colors: map-merge($my-colors, $theme-colors);
+
+// importing bootstrap to redefine the original bootstrap color variables
+@import "../../node_modules/bootstrap/scss/bootstrap";
