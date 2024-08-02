@@ -1,11 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import logo from '../IMG/logo.svg'
-import wallet from '../IMG/solar_wallet-linear.svg'
-import wolf from '../IMG/wolf.svg'
-import search from '../IMG/tabler_search.svg'
-import logout from '../IMG/ion_rocket-sharp.svg'
-import login from '../IMG/login.svg'
+import logo from '../IMG/logo.png';
+import menu from '../IMG/menu.png';
+import wallet from '../IMG/solar_wallet-linear.svg';
+import wolf from '../IMG/wolf.svg';
+import search from '../IMG/tabler_search.svg';
+import logout from '../IMG/ion_rocket-sharp.svg';
+import login from '../IMG/login.svg';
 
 const Landing = () => {
   return (
@@ -20,9 +21,10 @@ const Landing = () => {
             <Link to='/' className='nav-item align-bottom text-decoration-none text-light'>Contact</Link>
           </nav>
 
-          <div className='d-flex align-items-baseline'>
-            <img src={search} alt="..." width={20} />
-            <Link to='connect' className='btn text-light d-none d-sm-flex gap-2 py-2 px-3 ms-5 h-5  border-2 border-primary bg-transparent rounded-5'><img src={wallet} alt="..." /> Wallet Connect</Link>
+          <div className='d-flex gap-3 gap-md-5 align-items-baseline'>
+            <img src={search} alt="search icon" width={20} />
+            <img src={menu} alt="menu icon" className='d-flex d-md-none' />
+            <Link to='connect' className='btn text-light d-none d-md-flex gap-2 py-2 px-3 h-5  border-2 border-primary bg-transparent rounded-5'><img src={wallet} alt="..." /> Wallet Connect</Link>
           </div>
         </header>
       </div>

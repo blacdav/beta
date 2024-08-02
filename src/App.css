@@ -27,6 +27,26 @@
   border-bottom: 2px solid blue;
 }
 
+.boundary::after {
+  content: '';
+  position: absolute;
+  background-color: #209ED9;
+  height: .1rem;
+  width: 14.5rem;
+  margin-top: .6rem;
+  margin-left: .3rem;
+}
+
+.boundary::before {
+  content: '';
+  position: absolute;
+  background-color: #209ED9;
+  height: .1rem;
+  width: 14.5rem;
+  margin-top: .6rem;
+  margin-left: -15rem;
+}
+
 @media (max-width: 576px) {
   .bgimg1 {
     background-image: url('../src/IMG/mobilebg.png');
@@ -47,6 +67,26 @@
 
   .borderh {
     border: none;
+  }
+
+  .boundary::after {
+    content: '';
+    position: absolute;
+    background-color: #209ED9;
+    height: .1rem;
+    width: 8rem;
+    margin-top: .6rem;
+    margin-left: .3rem;
+  }
+  
+  .boundary::before {
+    content: '';
+    position: absolute;
+    background-color: #209ED9;
+    height: .1rem;
+    width: 8rem;
+    margin-top: .6rem;
+    margin-left: -8.3rem;
   }
 }
 

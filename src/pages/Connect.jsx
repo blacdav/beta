@@ -1,6 +1,6 @@
 import React from 'react'
 import '../App.css';
-import logo from '../IMG/logo.svg'
+import logo from '../IMG/logo.png'
 
 const Connect = () => {
   return (
