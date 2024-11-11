@@ -18,6 +18,17 @@
   width: 100vw;
 }
 
+.bgimg3 {
+  background-image: url('../src/IMG/bgworldlg.png');
+  background-color: #030545;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100vw;
+}
+
 .bgimg2::before {
   content: '';
   background-image: url('../src/IMG/wolf.svg');
@@ -78,6 +89,19 @@
   }
 
   .bgimg2 {
+    background-image: url('../src/IMG/bgnetsm.png');
+    background-color: #030545;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    height: 100dvh;
+    width: 100dvw;
+  }
+
+  .bgimg3 {
     background-image: url('../src/IMG/bgnetsm.png');
     background-color: #030545;
     background-size: cover;

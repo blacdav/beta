@@ -25,8 +25,8 @@ const Signup = () => {
         <div className="d-flex d-md-none justify-content-start w-100 z-1">
           <img src={back} alt="back button" onClick={() => navigate(-1)} />
         </div>
-        <div className=" bg-whitebg shadow clip-box w-100 h-100 pt-3 pb-5 px-3 px-md-5 rounded-4 d-flex flex-column align-items-end">
-          <div className="row">
+        <div className="bg-whitebg shadow clip-box w-100 h-100 pt-3 pb-5 px-3 px-md-5 rounded-4 d-flex flex-column align-items-end">
+          <div className="d-grid col-12 col-md-8 mx-md-3">
             <div className="col-md-2"></div>
             <div className="border-3 border-primary col-12 grid justify-items-center">
               <div className="d-flex w-100 justify-content-center"><img src={logo} alt="beta logo" /></div>

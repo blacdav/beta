@@ -8,12 +8,9 @@ import { useNavigate } from "react-router-dom";
 
 const Signup = () => {
   const [signup, setSignup] = useState({
-    fullname: "",
     email: "",
     username: "",
     password: "",
-    cpassword: "",
-    tnc: false
   });
 
   const navigate = useNavigate();
@@ -25,10 +22,9 @@ const Signup = () => {
         <div className="d-flex d-md-none justify-content-start w-100 z-1">
           <img src={back} alt="back button" onClick={() => navigate(-1)} />
         </div>
-        <div className="container bg-whitebg shadow clip-box w-100 h-100 pt-3 pb-5 px-3 px-md-5 rounded-4 d-flex flex-column flex-md-row align-items-end">
-          <div className="row">
-            <div className="col-md-2">bhbjbhj</div>
-            <div className="border-3 border-primary col-12 col-md-10 grid justify-items-center">
+        <div className="bg-whitebg shadow clip-box w-100 h-100 pt-3 pb-5 px-3 px-md-5 rounded-4 d-flex flex-column align-items-end">
+          <div className="d-grid col-12 col-md-8 mx-md-3 h-75 h-md-100">
+            <div className="border-3 border-primary col-12 d-grid align-items-center justify-items-center">
               <div className="d-flex w-100 justify-content-center"><img src={logo} alt="beta logo" /></div>
               <form
                 method="post"
@@ -40,7 +36,7 @@ const Signup = () => {
                   <input
                     type="tel"
                     placeholder="Enter your username/email"
-                    className="w-100 px-3 py-2 py-md-1 rounded-5 shadow-sm border border-white"
+                    className="w-100 px-3 py-3 py-md-2 rounded-5 shadow-sm border border-white"
                     value={signup.username}
                     onChange={(e) => {
                       setSignup({ ...signup, username: e.target.value.trim() });
@@ -54,7 +50,7 @@ const Signup = () => {
                   <input
                     type="text"
                     placeholder="Create a Password"
-                    className="w-100 px-3 py-2 py-md-1 rounded-5 shadow-sm border border-white"
+                    className="w-100 px-3 py-3 py-md-2 rounded-5 shadow-sm border border-white"
                     value={signup.password}
                     onChange={(e) => {
                       setSignup({ ...signup, password: e.target.value.trim() });
@@ -63,32 +59,8 @@ const Signup = () => {
                   <small></small>
                 </div>
 
-                <div className="w-100 d-flex gap-3">
-                  <div className="w-100">
-                    <label htmlFor="cpassword">Confirm Password</label>
-                    <input
-                      type="text"
-                      placeholder="Confirm Password"
-                      className="w-100 px-3 py-2 py-md-1 rounded-5 shadow-sm border border-white"
-                      value={signup.cpassword}
-                      onChange={(e) => {
-                        setSignup({ ...signup, cpassword: e.target.value.trim() });
-                      }}
-                    />
-                    <small></small>
-                  </div>
-                </div>
-
-                <div className="w-100 my-2">
-                  <div className="d-flex align-items-center gap-2">
-                    <input type="checkbox" className="bg-white border border-whitebg" value={signup.tnc} onChange={(e) => {setSignup({...signup, tnc: e.target.checked})}} />
-                    <p className="m-0">I Agree to the Terms and Conditions</p>
-                  </div>
-                  <small></small>
-                </div>
-
                 <button
-                  className="w-100 px-3 py-2 py-md-1 text-white fw-semibold rounded-5 bg-blue border-0 btn-outline-blue"
+                  className="w-100 px-3 py-3 py-md-2 mt-3 text-white fw-semibold rounded-5 bg-blue border-0 btn-outline-blue"
                   onClick={(e) => {
                     e.preventDefault();
                     console.log(signup);

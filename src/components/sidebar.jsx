@@ -16,7 +16,7 @@ const Sidebar = ({ miniSidebar, setMiniSidebar}) => {
           <li className={`overflow-hidden ${miniSidebar ? 'rotate-90' : 'rotate-180'}`}><img src={back} alt="minimize button" onClick={() => setMiniSidebar(!miniSidebar)} /></li>
         </ul>
 
-        <ul className='d-grid gap-3 text-bold'>
+        <ul className={`${miniSidebar ? 'gap-3' : 'gap-5'} d-grid text-bold`}>
           <li className='overflow-hidden'><Link className='text-decoration-none d-flex align-items-baseline gap-2' to='/user'><img src={dashboard} alt="dashboard icon" /><p className={`${miniSidebar ? '' : 'd-none'} font-bold`}>Dashboard</p></Link></li>
           <li className='overflow-hidden'><Link className='text-decoration-none d-flex align-items-baseline gap-2' to='earn'><img src={earn_nft} alt="earn nft icon" /><p className={`${miniSidebar ? '' : 'd-none'}`}>Earn NFTs</p></Link></li>
           <li className='overflow-hidden'><Link className='text-decoration-none d-flex align-items-baseline gap-2' to='collections'><img src={collection} alt="nft collections icon" /><p className={`${miniSidebar ? '' : 'd-none'}`}>NFT Collections</p></Link></li>
