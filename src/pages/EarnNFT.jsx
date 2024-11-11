@@ -2,9 +2,9 @@ import React from 'react'
 
 const EarnNFT = () => {
   return (
-    <div>
+    <main className='d-grid p-5 h-75'>
       Earn Page
-    </div>
+    </main>
   )
 }
 

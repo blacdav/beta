@@ -1,35 +1,19 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { Outlet } from 'react-router-dom'
-
-const url = process.env.REACT_APP_API_URL;
+import Sidebar from '../components/sidebar'
+import Header from '../components/header';
 
 const User = () => {
-  const [users, setUsers] = useState([])
-
-  useEffect(() => {
-    const GetUser = async () => {
-      const res = await fetch(url)
-      const data = await res.json()
-      setUsers(data)
-      // console.log(data)
-    }
-    GetUser()
-  }, [])
+  const [miniSidebar, setMiniSidebar] = useState(true);
 
   return (
-    <div>
-      Users Page Username is Nifemi
-      {
-        users.map((user) => {
-          return (
-            <div key={user.id}>
-              <p>{user.name}</p>
-            </div>
-          )
-        })
-      }
-      <Outlet />
-    </div>
+    <main className='d-flex w-100 bgimg1 text-white'>
+        <Sidebar miniSidebar={miniSidebar} setMiniSidebar={setMiniSidebar} />
+      <section className={`d-grid ${miniSidebar ? 'col-10' : 'col-11'}`}>
+        <Header />
+        <Outlet />
+      </section>
+    </main>
   )
 }
 

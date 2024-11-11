@@ -8,12 +8,31 @@
 }
 
 .bgimg2 {
-  background-image: url('../src/IMG/signupbg.png');
+  background-image: url('../src/IMG/bgworldlg.png');
+  background-color: #030545;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   height: 100vh;
+  width: 100vw;
+}
+
+.bgimg2::before {
+  content: '';
+  background-image: url('../src/IMG/wolf.svg');
+  background-size: 550px;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-position-y: center;
+  background-position-x: left;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border-top-right-radius: 60% 40%;
+  border-bottom-right-radius: 60% 40%;
+  position: absolute;
+  left: 0;
+  width: 45vw;
+  height: 100dvh;
 }
 
 .clip-box {
@@ -56,6 +75,36 @@
     background-attachment: fixed;
     height: 100vh;
     width: 100%;
+  }
+
+  .bgimg2 {
+    background-image: url('../src/IMG/bgnetsm.png');
+    background-color: #030545;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    height: 100dvh;
+    width: 100dvw;
+  }
+
+  .bgimg2::before {
+    content: '';
+    background-image: url('../src/IMG/wolf-blurred.png');
+    background-color: rgba(0, 0, 0, 0.2);
+    background-position: top;
+    background-position-y: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    border-top-right-radius: 0% 0%;
+    border-bottom-left-radius: 60% 30%;
+    border-bottom-right-radius: 60% 30%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 50%;
   }
 
   .clip-box {

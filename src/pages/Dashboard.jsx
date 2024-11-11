@@ -25,8 +25,27 @@ const Dashboard = () => {
   }, [])
 
   return (
-    <div>
-      Dashboard Page
+    <section className='d-grid col-8 p-5 h-75'>
+      <section>
+        <div className='d-grid d-md-flex h-75 justify-content-between border border-2 border-red-700'>
+          <div>
+            <h2>sergyetyea</h2>
+            <p>A Plarform that enebles holders to earn and display non-fungible token(NFT) certificates as proof of their educational archievements.</p>
+            <button></button>
+          </div>
+          <img src="#" alt="wolf" width={250} height={250} />
+        </div>
+
+        <div></div>
+        
+        <div></div>
+      </section>
+
+      <section>
+        <div>
+          sgseg
+        </div>
+      </section>
 
       {
         users.map((user) => {
@@ -39,7 +58,7 @@ const Dashboard = () => {
           ) 
         })
       }
-    </div>
+    </section>
   )
 }
 

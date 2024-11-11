@@ -2,9 +2,9 @@ import React from 'react'
 
 const Collections = () => {
   return (
-    <div>
+    <main className='d-grid p-5 h-75'>
       NFT Collections Page
-    </div>
+    </main>
   )
 }
 

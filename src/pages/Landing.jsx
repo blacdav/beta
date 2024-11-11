@@ -10,7 +10,7 @@ import login from '../IMG/login.svg';
 
 const Landing = () => {
   return (
-    <div className="text-light w-100 overflow-hidden bgimg1">
+    <div className="text-light w-100 min-h-100 overflow-hidden bgimg1">
       <div className="container-fluid borderh">
         <header className='d-flex justify-content-between align-items-baseline container pt-3 pb-4'>
           <img src={logo} alt="..." width={100} />
