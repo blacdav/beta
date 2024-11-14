@@ -9,7 +9,7 @@ const User = () => {
   return (
     <main className='d-flex w-100 bgimg1 text-white'>
         <Sidebar miniSidebar={miniSidebar} setMiniSidebar={setMiniSidebar} />
-      <section className={`d-grid ${miniSidebar ? 'col-10' : 'col-11'}`}>
+      <section className={`d-grid ${miniSidebar ? 'col-md-10' : 'col-md-11'} col-12 pb-3 min-vh-100`}>
         <Header />
         <Outlet />
       </section>

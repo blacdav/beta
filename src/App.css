@@ -77,6 +77,15 @@
   margin-left: -15rem;
 }
 
+.dashboard {
+  background-image: url('../src/IMG/dashboard-hero.png');
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+
 @media (max-width: 576px) {
   .bgimg1 {
     background-image: url('../src/IMG/mobilebg.png');

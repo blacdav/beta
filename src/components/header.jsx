@@ -3,16 +3,16 @@ import search from '../IMG/tabler_search.svg';
 
 const Header = () => {
   return (
-    <header className='d-none d-md-flex borderh pt-3 pb-2 px-5 h-50 justify-content-between'>
+    <header className='d-flex borderh pt-3 pb-2 px-5 min-vh-25 justify-content-between'>
       <div className='d-flex align-items-center gap-2 w-50 h-75 border border-2 border-primary rounded-pill py-1 px-3'>
         <img src={search} alt="search icon" />
-        <input type="search" className='w-100 h-75 rounded-pill px-3 bg-transparent border border-transparent text-white' />
+        <input type="search" placeholder='Search for NFTs, Collection & Artist' className='w-100 h-75 rounded-pill px-3 bg-transparent border border-transparent text-white' />
       </div>
-      <div className='d-flex border border-2 border-primary p-3 rounded-pill h-100'>
-        <img src="#" alt="avater" />
-        <div>
-          <p>Username</p>
-          <small>id</small>
+      <div className='d-flex align-items-center justify-content-between px-4 border border-2 border-primary p-3 rounded-pill h-75 w-25'>
+        {/* <img src="#" alt="avater" /> */}O
+        <div className='d-flex flex-column col-8'>
+          <p>Blacdav</p>
+          <small>80771162</small>
         </div>
       </div>
     </header>

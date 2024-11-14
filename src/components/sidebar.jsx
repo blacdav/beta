@@ -6,11 +6,13 @@ import dashboard from '../IMG/dashboard.png'
 import earn_nft from '../IMG/earn-nft.png'
 import collection from '../IMG/collection.png'
 import notification from '../IMG/notification.png'
+import settings from '../IMG/settings.png'
+import support from '../IMG/support.png'
 
 const Sidebar = ({ miniSidebar, setMiniSidebar}) => {
   return (
     <aside className={`${miniSidebar ? 'col-2' : 'col-1'} py-3 min-vh-100 bg-whitebg text-blue d-none d-md-grid align-content-between`}>
-      <div className='d-grid gap-5'>
+      <div className='d-grid gap-5 ps-2'>
         <ul className='d-flex justify-content-between align-items-center'>
           <li className='overflow-hidden'><img src={logo} alt="beta logo" width={miniSidebar ? 100 : 50} height={miniSidebar ? 60 : 30} /></li>
           <li className={`overflow-hidden ${miniSidebar ? 'rotate-90' : 'rotate-180'}`}><img src={back} alt="minimize button" onClick={() => setMiniSidebar(!miniSidebar)} /></li>
@@ -24,9 +26,9 @@ const Sidebar = ({ miniSidebar, setMiniSidebar}) => {
         </ul>
       </div>
 
-      <ul className='d-grid gap-3'>
-        <li className='overflow-hidden'><img src="#" alt="setting icon" /><p className={`${miniSidebar ? '' : 'd-none'}`}>Setting</p></li>
-        <li className='overflow-hidden'><img src="#" alt="support icon" /><p className={`${miniSidebar ? '' : 'd-none'}`}>Support</p></li>
+      <ul className={`d-grid ${miniSidebar ? 'gap-3' : 'gap-5'} ms-2`}>
+        <li className='overflow-hidden'><Link className='text-decoration-none d-flex align-items-baseline gap-2' to='settings'><img src={settings} alt="setting icon" /><p className={`${miniSidebar ? '' : 'd-none'}`}>Setting</p></Link></li>
+        <li className='overflow-hidden'><Link className='text-decoration-none d-flex align-items-baseline gap-2' to=''><img src={support} alt="support icon" /><p className={`${miniSidebar ? '' : 'd-none'}`}>Support</p></Link></li>
       </ul>
     </aside>
   )
