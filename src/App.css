@@ -53,6 +53,18 @@
   background-color: red;
 }
 
+/* Hide scrollbar for all browsers */
+.hidden-scrollbar {
+  overflow-y: scroll; /* Ensures the element is scrollable */
+  scrollbar-width: none; /* For Firefox */
+}
+
+/* For WebKit-based browsers (e.g., Chrome, Edge, Safari) */
+.hidden-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+
 .borderh {
   border-bottom: 2px solid blue;
 }

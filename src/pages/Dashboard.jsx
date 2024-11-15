@@ -4,7 +4,7 @@ import wolf from '../IMG/wolf.svg';
 
 const Dashboard = () => {
   return (
-    <section className='d-grid d-md-flex col-12 px-4 min-vh-75 overflow-y-scroll'>
+    <section className='d-grid d-md-flex col-12 px-4 min-vh-75 overflow-y-scroll hidden-scrollbar'>
       <section className='d-grid h-100 col-12 col-md-8 gap-3 py-3 pe-0 pe-md-4'>
         <div className='dashboard d-flex justify-content-between align-items-center rounded-3 px-3 px-md-5 py-4'>
           <div className='col-9 d-grid gap-2'>

@@ -6,7 +6,6 @@ import Signup from './auth/Signup';
 import Login from './auth/Login';
 import Connect from './auth/Connect';
 import NoMatch from './pages/NoMatch';
-// import User from './pages/User';
 import Dashboard from './pages/Dashboard';
 import Category from './auth/Category';
 import EarnNFT from './pages/EarnNFT'

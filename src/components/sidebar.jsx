@@ -39,7 +39,7 @@ const Sidebar = ({ miniSidebar, setMiniSidebar}) => {
       <ul className={`d-grid gap-4 ms-2`}>
         <li className='overflow-hidden'><Link className={`text-decoration-none d-flex align-items-center gap-2 ${settings ? 'fw-bold' : ''}`} to='settings'><img src={settings_icon} alt="setting icon" /><p className={`${miniSidebar ? '' : 'd-none'} m-0`}>Settings</p></Link></li>
         <li className='overflow-hidden'><Link className='text-decoration-none d-flex align-items-center gap-2' to=''><img src={support} alt="support icon" /><p className={`${miniSidebar ? '' : 'd-none'} m-0`}>Support</p></Link></li>
-        <li className='overflow-hidden'><Link className='text-decoration-none d-flex align-items-center gap-2' to=''><img src={support} alt="support icon" /><p className={`${miniSidebar ? '' : 'd-none'} m-0`}>LogOut</p></Link></li>
+        <li className={`overflow-hidden ${settings ? 'd-block' : 'd-none'}`}><Link className='text-decoration-none d-flex align-items-center gap-2' to=''><img src={support} alt="support icon" /><p className={`${miniSidebar ? '' : 'd-none'} m-0`}>LogOut</p></Link></li>
       </ul>
     </aside>
   )
