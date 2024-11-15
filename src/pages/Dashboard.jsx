@@ -40,7 +40,7 @@ const Dashboard = () => {
         </div>
       </section>
 
-      <aside className='d-grid gap-4 h-100 col-12 col-md-4 pt-3'>
+      <aside className='d-grid gap-4 h-100 col-12 col-md-4 pt-5'>
         <div className='bg-primary p-3 rounded-3'>
           <p>NFT</p>
           <p>NFT</p>

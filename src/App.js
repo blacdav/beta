@@ -12,6 +12,7 @@ import Category from './auth/Category';
 import EarnNFT from './pages/EarnNFT'
 import Collections from './pages/Collections';
 import Notifications from './pages/Notifications';
+import Settings from './pages/Settings';
 const Landing = React.lazy(() => import('./pages/Landing'))
 const User = React.lazy(() => import('./pages/User'))
 
@@ -29,6 +30,7 @@ function App() {
         <Route path='earn' element={<EarnNFT />} />
         <Route path='collections' element={<Collections />} />
         <Route path='notifications' element={<Notifications />} />
+        <Route path='settings' element={<Settings />} />
       </Route>
       <Route path='*'element={<NoMatch />} />
     </Routes>
