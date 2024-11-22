@@ -12,18 +12,19 @@ import EarnNFT from './pages/EarnNFT'
 import Collections from './pages/Collections';
 import Notifications from './pages/Notifications';
 import Settings from './pages/Settings';
+import Loading from './components/Loading';
 const Landing = React.lazy(() => import('./pages/Landing'))
 const User = React.lazy(() => import('./pages/User'))
 
 function App() {
   return (
     <Routes>
-      <Route path='/' element={<React.Suspense fallback='Loading...'><Landing /></React.Suspense>} />
+      <Route path='/' element={<React.Suspense fallback={<Loading />}><Landing /></React.Suspense>} />
       <Route path='signup' element={<Signup />} />
       <Route path='category' element={<Category />} />
       <Route path='login' element={<Login />} />
       <Route path='connect' element={<Connect />} />
-      <Route path='user' element={<React.Suspense fallback='Loading Please Wait...'><User /></React.Suspense>}>
+      <Route path='dashboard' element={<React.Suspense fallback={<Loading />}><User /></React.Suspense>}>
         <Route index element={<Dashboard />} />
         {/* <Route path='category' element={<Category />} /> */}
         <Route path='earn' element={<EarnNFT />} />

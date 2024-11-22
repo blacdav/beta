@@ -91,7 +91,7 @@
 
 .dashboard {
   background-image: url('../src/IMG/dashboard-hero.png');
-  /* background-size: cover; */
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   height: 100%;
@@ -204,11 +204,17 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
+.loader {
+  animation: boom duration timing-function 0s infinite direction both;
+}
+
+@keyframes boom {
   from {
-    transform: rotate(0deg);
+    /* transform: rotate(0deg); */
+    transform: scale(1);
   }
   to {
-    transform: rotate(360deg);
+    /* transform: rotate(360deg); */
+    transform: scale(2);
   }
 }

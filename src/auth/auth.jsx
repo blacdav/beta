@@ -1,11 +1,11 @@
 import React, { createContext, useContext, useState, useEffect } from 'react'
 
-const AuthContext = createContext(null)
+const AuthContext = createContext();
 
 const url = process.env.REACT_APP_API_URL;
-
 export const AuthProvider = ({ children }) => {
     const [user, setUser] = useState(null);
+    const [mobileSidebar, setMobileSidebar] = useState(false);
 
     useEffect(() => {
         const GetUser = async () => {
@@ -27,7 +27,7 @@ export const AuthProvider = ({ children }) => {
     }
 
     return(
-        <AuthContext.Provider value={{ user, login, logout }}>
+        <AuthContext.Provider value={{ user, login, logout, mobileSidebar, setMobileSidebar }}>
             { children }
         </AuthContext.Provider>
     )
