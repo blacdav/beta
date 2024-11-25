@@ -1,7 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import nft from '../IMG/cat_nft.png';
 
 const LearnToEarn = () => {
+    const [mint, setMint] = useState(false);
+
+    // const showMint = (i) => {
+    //     onMouseEnter={() => setMint(true)}
+    // }
+
+    // const hideMint = () => {
+    //     onMouseLeave={() => setMint(false)}
+    // }
+
   return (
     <div className='p-3 rounded-3 col-12'>
         <h3>Learn To Earn</h3>
@@ -9,9 +19,9 @@ const LearnToEarn = () => {
             {
                 [...Array(5)].map((_, i) => {
                     return (
-                        <div key={i} className='d-grid border rounded-4 overflow-hidden' style={{minWidth: '15rem'}}>
+                        <div key={i} onMouseEnter={() => setMint(true)} onMouseLeave={() => setMint(false)} className='d-grid border rounded-4 overflow-hidden' style={{minWidth: '15rem'}}>
                             <img src={nft} alt="nft" />
-                            <div className='p-2 rounded-3 bg-primary mx-auto' style={{marginTop: '-7rem', minWidth: '12rem', height: '6rem', marginBottom: '.5rem'}}>
+                            <div   className={`${mint ? 'd-grid' : 'd-none'} p-2 rounded-3 bg-primary mx-auto`} style={{marginTop: '-7rem', minWidth: '12rem', height: '6rem', marginBottom: '.5rem'}}>
                                 <div className='d-flex justify-content-between'>
                                     <p className='m-0'>Rex Felix</p>
                                     <p className='m-0'>Rex Felix</p>

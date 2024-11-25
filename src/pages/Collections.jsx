@@ -1,7 +1,7 @@
 import React from 'react'
 import cover from '../IMG/cover_photo.png';
 import profile from '../IMG/profile_photo.png';
-import nft from '../IMG/cat_nft.png';
+// import nft from '../IMG/cat_nft.png';
 import LearnToEarn from '../components/learn_to_earn';
 import TopCreators from '../components/TopCreators';
 
