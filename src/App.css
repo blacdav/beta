@@ -96,7 +96,10 @@
   background-position: center;
   /* height: 100%; */
   width: auto;
-  /* width: 100%; */
+}
+
+.hero_fs {
+  font-size: 34px;
 }
 
 @media (max-width: 576px) {
@@ -183,6 +186,10 @@
     margin-top: .6rem;
     margin-left: -8.3rem;
   }
+}
+
+.hero_fs {
+  font-size: .4rem;
 }
 
 .App-logo {

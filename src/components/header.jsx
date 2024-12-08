@@ -9,7 +9,7 @@ const Header = () => {
   const { mobileSidebar, setMobileSidebar } = useAuth();
 
   return (
-    <header className='d-flex col-12 borderh pt-3 pb-2 px-4 px-md-5 min-vh-25 justify-content-between'>
+    <header className='d-flex borderh pt-3 pb-2 px-4 px-md-5 min-vh-25 justify-content-between'>
       <img src={logo} alt="beta logo" width={60} height={40} className='d-block d-md-none' />
       <div className='d-flex d-md-none gap-2 align-items-center'>
         <img src={search} alt="beta logo" width={20} />

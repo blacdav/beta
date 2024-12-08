@@ -9,14 +9,11 @@ const User = () => {
   // const { mobileSidebar, setMobileSidebar } = useAuth();
 
   return (
-    <main className='d-flex col-12 bgimg1 text-white'>
+    <main className='d-flex m-0 p-0 bgimg1 text-white'>
         <Sidebar miniSidebar={miniSidebar} setMiniSidebar={setMiniSidebar} />
-      <section className={`d-grid ${miniSidebar ? 'col-md-10' : 'col-md-11'} pb-3 min-vh-100`}>
+      <section className={`d-grid ${miniSidebar ? 'col-md-10' : 'col-md-11'} container-fluid min-vh-100 m-0 p-0 pb-3`}>
         <Header />
         <Outlet />
-        <div className='d-grid d-md-none'>
-          <Sidebar />
-        </div>
       </section>
     </main>
   )

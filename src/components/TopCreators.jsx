@@ -9,7 +9,7 @@ const TopCreators = () => {
       {
         [...Array(4)].map((_, i) => {
           return (
-            <div className='d-flex gap-2 p-2 rounded-3 aligm-items-center cursor-pointer bg-warning'>
+            <div key={i} className='d-flex gap-2 p-2 rounded-3 aligm-items-center cursor-pointer bg-warning'>
               <img src={nft} alt="img" className='rounded-3' width={50} height={50} />
               <div>
                 <p className='m-0 p-0'>Blacdav</p>
