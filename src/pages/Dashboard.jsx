@@ -38,7 +38,7 @@ const Dashboard = () => {
                     return (
                       <div key={i} className='d-inline-block border-0 rounded-4 overflow-hidden' style={{minWidth: '11%', flexShrink: 0}}>
                         <img src={cover} alt="cover" />
-                        <div className='bg-bg pb-3 d-grid text-center justify-content-center'>
+                        <div className='bg-bgblue pb-3 d-grid text-center justify-content-center'>
                           <img src={profile} alt="avater" className='rounded-circle mb-1 mx-auto' style={{marginTop: '-1.5rem'}} />
                           <p className='m-0 fw-bold'>David David</p>
                           <p className='m-0'>ID: 80771162</p>
@@ -56,14 +56,14 @@ const Dashboard = () => {
       </section>
 
       <aside className='d-grid gap-4 h-100 col-12 col-md-3 px-0 pt-4'>
-        <div className='bg-primary p-3 rounded-3'>
+        <div className='bg-bgblue p-3 rounded-3'>
           <h3>Upcoming NFTs</h3>
 
           <div className='d-grid gap-2'>
             {
               [...Array(6)].map((_, i) => {
                 return (
-                  <div key={i} className='d-flex gap-2 p-2 rounded-3 aligm-items-center bg-warning'>
+                  <div key={i} className='d-flex gap-2 p-2 rounded-3 aligm-items-center bg-greybg'>
                     <img src={nft} alt="img" className='rounded-3' width={50} height={50} />
                     <div>
                       <p className='m-0 p-0'>Blacdav</p>
