@@ -57,13 +57,13 @@ const Dashboard = () => {
 
       <aside className='d-grid gap-4 h-100 col-12 col-md-3 px-0 pt-4'>
         <div className='bg-bgblue p-3 rounded-3'>
-          <h3>Upcoming NFTs</h3>
+          <h3 className='text-greybg'>Upcoming NFTs</h3>
 
           <div className='d-grid gap-2'>
             {
               [...Array(6)].map((_, i) => {
                 return (
-                  <div key={i} className='d-flex gap-2 p-2 rounded-3 aligm-items-center bg-greybg'>
+                  <div key={i} className='d-flex gap-2 p-2 rounded-3 aligm-items-center bg-greybg text-bgblue'>
                     <img src={nft} alt="img" className='rounded-3' width={50} height={50} />
                     <div>
                       <p className='m-0 p-0'>Blacdav</p>

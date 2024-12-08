@@ -4,7 +4,7 @@ import nft from '../IMG/cat_nft.png';
 const TopCreators = () => {
   return (
     <section className='bg-bgblue p-3 rounded-3'>
-      <h3>Top Creators</h3>
+      <h3 className='text-greybg'>Top Creators</h3>
       <div className='d-grid gap-2'>
       {
         [...Array(4)].map((_, i) => {
