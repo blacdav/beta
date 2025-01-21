@@ -31,7 +31,7 @@ const Landing = () => {
 
       <div className='container d-md-flex align-content-center'>
         <div className='container mx-auto w-md-50 py-5 pe-md-5'>
-          <h1>Get Certified And <span className='text-primary'>Earn</span> NFT's.</h1>
+          <h1 className='heroh1'>Get Certified And <span className='text-primary'>Earn</span> NFT's.</h1>
           <p>
             A platform that enables learners to earn and display non-fungible token(NFT) certificates as proof of their 
             educational archievements.
@@ -43,7 +43,7 @@ const Landing = () => {
         </div>
 
         <div className='d-none d-md-flex'>
-          <img src={wolf} alt="..." width={450} height={450} />
+          <img src={wolf} alt="..." width={400} height={400} />
         </div>
       </div>
 

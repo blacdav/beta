@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'Outfit';
+  src: url('./fonts/Outfit-VariableFont_wght.ttf');
+}
+
+.heroh1 {
+  font-size: '64px';
+}
+
 .bgimg1 {
   background-image: url('../src/IMG/desktopbg.jpg');
   background-size: cover;
