@@ -16,8 +16,8 @@ const EarnNFT = () => {
         </div>
       </section>
 
-      <section className='d-flex flex-column-reverse flex-md-row col-12 pt-4 gap-4 gap-md-0'>
-        <div className='col-12 col-md-9 d-grid gap-4 pe-0 pe-md-4'>
+      <section className='d-flex flex-column-reverse flex-lg-row col-12 pt-4 gap-4 gap-lg-0'>
+        <div className='col-12 col-lg-9 d-grid gap-4 pe-0 pe-lg-4'>
           <div className='d-grid gap-4 bg-primary p-3 rounded-3'>
             <h2>Question 5</h2>
             <p>When was NFTs First Introduced?</p>
@@ -42,17 +42,17 @@ const EarnNFT = () => {
             </div>
           </div>
 
-          <div className='col-12 col-md-9 d-flex justify-content-center gap-1'>
-            <button className='col-5 col-md-3 p-2 rounded-3 bg-white btn-outline-white border-0 text-primary'>&lt; Previous</button>
-            <button className='col-5 col-md-3 p-2 rounded-3 bg-primary btn-outline-primary border-0 text-white'>Next &gt;</button>
+          <div className='col-12 col-lg-9 d-flex justify-content-center gap-1'>
+            <button className='col-5 col-lg-3 p-2 rounded-3 bg-white btn-outline-white border-0 text-primary'>&lt; Previous</button>
+            <button className='col-5 col-lg-3 p-2 rounded-3 bg-primary btn-outline-primary border-0 text-white'>Next &gt;</button>
           </div>
 
           <div className='d-flex justify-content-center'>
-            <button className='col-10 d-block d-md-none p-2 rounded-3 bg-primary btn-outline-primary border-0 text-white'>Submit</button>
+            <button className='col-10 d-block d-lg-none p-2 rounded-3 bg-primary btn-outline-primary border-0 text-white'>Submit</button>
           </div>
         </div>
 
-        <aside className='col-12 col-md-3 d-grid gap-4'>
+        <aside className='col-12 col-lg-3 d-grid gap-4'>
           <div className='d-grid col-12 gap-1 bg-bg p-3 rounded-3'>
             <small>Question: 1-30</small>
             <div className='d-flex flex-wrap gap-2 mt-2'>
@@ -89,7 +89,7 @@ const EarnNFT = () => {
             </div>
           </div>
 
-          <button className='d-none d-md-block p-2 rounded-3 bg-primary btn-outline-primary border-0 text-white'>Submit</button>
+          <button className='d-none d-lg-block p-2 rounded-3 bg-primary btn-outline-primary border-0 text-white'>Submit</button>
         </aside>
       </section>
     </main>

@@ -10,24 +10,24 @@ import nft from '../IMG/cat_nft.png';
 
 const Dashboard = () => {
   return (
-    <section className='d-block d-md-flex col-12 m-0 px-3 gap-0 gap-md-4 min-vh-75 overflow-y-scroll hidden-scrollbar'>
-      <section className='h-100 col-12 col-md-9 m-0 p-0'>
+    <section className='col-12 d-lg-flex justify-content-center gap-0 gap-lg-4 px-4 px-lg-0 min-vh-75 overflow-y-scroll hidden-scrollbar'>
+      <section className='h-100 col-12 col-lg-8 m-0 p-0'>
         {/* <section className='py-3 px-0 m-0'> */}
           {/* <div className='row'> */}
-            <div className='d-flex dashboard w-100 h-auto d-grid col-4 align-items-center rounded-3 px-3 px-md-5 m-0 mt-2 py-4'>
-              <div className='col-5 col-9 d-grid d-md-none gap-1 gap-md-2 hero_fs'>
+            <div className='d-flex dashboard w-100 h-auto d-grid col-4 align-items-center rounded-3 px-3 px-lg-5 m-0 mt-2 py-4'>
+              <div className='col-5 col-9 d-grid d-lg-none gap-1 gap-lg-2 hero_fs'>
                 <small>#hackathonNFTs</small>
                 <p className='fw-semibold'>A Plarform that enebles holders to earn and display non-fungible token(NFT) certificates as proof of their educational archievements.</p>
                 <button className="w-50 d-block py-1 bg-primary text-white rounded-3">View Collection</button>
               </div>
-              <div className='col-5 col-md-9 d-none d-md-grid gap-0 gap-md-2'>
+              <div className='col-5 col-lg-9 d-none d-lg-grid gap-0 gap-lg-2'>
                 <small>#hackathonNFTs</small>
                 <p className='fw-semibold'>A Plarform that enebles holders to earn and display non-fungible token(NFT) certificates as proof of their educational archievements.</p>
-                <button className="w-75 d-block d-md-none py-1 bg-primary text-white rounded-3">View Collection</button>
-                <button className="w-50 d-none d-md-block py-1 bg-primary text-white rounded-3">View Collection</button>
+                <button className="w-75 d-block d-lg-none py-1 bg-primary text-white rounded-3">View Collection</button>
+                <button className="w-50 d-none d-lg-block py-1 bg-primary text-white rounded-3">View Collection</button>
               </div>
-              <img src={wolf} alt="wolf" width={250} height={250} className='d-none d-md-block img-fluid' style={{marginTop: '-2rem', marginLeft: '-2rem'}} />
-              <img src={wolf} alt="wolf" width={80} height={80} className='d-block d-md-none col-3' />
+              <img src={wolf} alt="wolf" width={250} height={250} className='d-none d-lg-block img-fluid' style={{marginTop: '-2rem', marginLeft: '-2rem'}} />
+              <img src={wolf} alt="wolf" width={80} height={80} className='d-block d-lg-none col-3' />
             </div>
 
             <div className='px-0 rounded-3 col-12'>
@@ -55,7 +55,7 @@ const Dashboard = () => {
         {/* </section> */}
       </section>
 
-      <aside className='d-grid gap-4 h-100 col-12 col-md-3 px-0 pt-4'>
+      <aside className='d-grid gap-4 h-100 col-12 col-lg-3 px-0 pt-4'>
         <div className='bg-bgblue p-3 rounded-3'>
           <h3 className='text-greybg'>Upcoming NFTs</h3>
 

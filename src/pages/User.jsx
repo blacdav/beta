@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Outlet } from 'react-router-dom'
 import Sidebar from '../components/sidebar'
 import Header from '../components/header';
+import Loading from '../components/Loading';
 // import { useAuth } from '../auth/auth';
 
 const User = () => {
@@ -11,7 +12,7 @@ const User = () => {
   return (
     <main className='d-flex m-0 p-0 bgimg1 text-white'>
         <Sidebar miniSidebar={miniSidebar} setMiniSidebar={setMiniSidebar} />
-      <section className={`d-grid ${miniSidebar ? 'col-md-10' : 'col-md-11'} container-fluid min-vh-100 m-0 p-0 pb-3`}>
+      <section className={`d-grid ${miniSidebar ? 'col-lg-10' : 'col-lg-11'} container-fluid m-0 p-0 pb-2 hidden-scrollbar`}>
         <Header />
         <Outlet />
       </section>

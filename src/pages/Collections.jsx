@@ -7,8 +7,8 @@ import TopCreators from '../components/TopCreators';
 
 const Collections = () => {
   return (
-    <main className='d-gri row col-12 gap-md-2 px-4 min-vh-75 overflow-y-scroll hidden-scrollbar'>
-      <section className='row h-100 col-12 col-md-9 py-3'>
+    <main className='col-12 d-lg-flex justify-content-center gap-0 gap-lg-4 px-4 px-lg-5 min-vh-75 overflow-y-scroll hidden-scrollbar'>
+      <section className='h-100 col-12 col-lg-9 py-3'>
         <div className='rounded-3 col-12'>
           <h3>Top Earners</h3>
           <div className='d-flex col-12 flex-nowrap gap-3 overflow-x-auto hidden-scrollbar' style={{maxWidth: '100%', whiteSpace: 'nowrap', overflowX: 'auto' }}>
@@ -32,7 +32,7 @@ const Collections = () => {
         <LearnToEarn />
       </section>
 
-      <aside className='d-grid gap-4 h-100 col-12 col-md-3 pt-5'>
+      <aside className='d-grid gap-4 h-100 col-12 col-lg-3 pt-5'>
         
 
         <TopCreators />
