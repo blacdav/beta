@@ -12,7 +12,7 @@ const User = () => {
   return (
     <main className='d-flex m-0 p-0 bgimg1 text-white'>
         <Sidebar miniSidebar={miniSidebar} setMiniSidebar={setMiniSidebar} />
-      <section className={`d-grid ${miniSidebar ? 'col-lg-10' : 'col-lg-11'} container-fluid m-0 p-0 pb-2 hidden-scrollbar`}>
+      <section className={`d-grid ${miniSidebar ? 'col-lg-11' : 'col-lg-10'} container-fluid m-0 p-0 pb-2 hidden-scrollbar`}>
         <Header />
         <Outlet />
       </section>

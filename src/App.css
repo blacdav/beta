@@ -201,6 +201,12 @@
     margin-top: .6rem;
     margin-left: -8.3rem;
   }
+
+  .stats {
+    display: block;
+    width: 40%;
+    font-size: 9px;
+  }
 }
 
 .hero_fs {
