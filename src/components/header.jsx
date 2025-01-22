@@ -19,11 +19,11 @@ const Header = () => {
         <img src={search} alt="search icon" />
         <input type="search" placeholder='Search for NFTs, Collection & Artist' className='w-100 h-75 rounded-pill px-3 bg-transparent border-0 button-outline-primary text-white' />
       </div>
-      <div className='d-none d-md-flex align-items-center justify-content-between px-4 border border-2 border-primary p-3 rounded-pill h-75 w-25'>
+      <div className='d-none d-md-flex align-items-center justify-content-lg-center    gap-2 gap-lg-3 px-2 border border-2 border-primary p-3 rounded-pill h-75 w-25'>
         <img src={profile} alt="avater" className='rounded-circle' />
         <div className='d-flex flex-column col-8'>
           <p className='m-0 fw-bold'>Blacdav</p>
-          <small className='m-0'>ID: 80771162</small>
+          <small className='m-0 fs-7'>ID: 80771162</small>
         </div>
       </div>
     </header>

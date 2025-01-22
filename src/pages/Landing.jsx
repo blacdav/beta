@@ -37,8 +37,8 @@ const Landing = () => {
             educational archievements.
           </p>
           <div className='w-100 d-grid d-md-flex gap-2 gap-md-0'>
-            <Link to='signup' className='btn text-light px-4 py-3 py-md-2 me-md-4 border-2 border-primary bg-transparent rounded-5'><img src={logout} alt="..." /> Sign Up</Link>
-            <Link to='login' className='btn text-light px-4 py-3 py-md-2 border-2 border-primary bg-transparent rounded-5'><img src={login} alt="..." /> Login</Link>
+            <Link to='signup' className='btn text-light px-4 py-2 py-md-2 me-md-4 border-2 border-primary bg-transparent rounded-5'><img src={logout} alt="..." /> Sign Up</Link>
+            <Link to='login' className='btn text-light px-4 py-2 py-md-2 border-2 border-primary bg-transparent rounded-5'><img src={login} alt="..." /> Login</Link>
           </div>
         </div>
 
@@ -48,17 +48,17 @@ const Landing = () => {
       </div>
 
       <div className='container d-flex justify-content-between px-4 gap-4'>
-        <div className='fw-semibold text-center'>
+        <div className='fw-semibold stats text-center'>
           <p className="bg-primary py-1 px-3 rounded-2 mb-0">TOTAL ACTIVE USERS</p>
-          <p className='fs-3 text-primary'>100,000+</p>   
+          <p className='fs-6 text-primary'>100,000+</p>   
         </div>
-        <div className='fw-semibold text-center'>
+        <div className='fw-semibold stats text-center'>
           <p className="bg-primary py-1 px-3 rounded-2 mb-0">NFT CERTIFICATE CLAIMERS</p>
-          <p className='fs-3 text-primary'>700,945+</p>
+          <p className='fs-6 text-primary'>700,945+</p>
         </div>
-        <div className='fw-semibold text-center'>
+        <div className='fw-semibold stats text-center'>
           <p className="bg-primary py-1 px-3 rounded-2 mb-0">NFT CERTIFICATE ISSUERS</p>
-          <p className='fs-3 text-primary'>55+</p>
+          <p className='fs-6 text-primary'>55+</p>
         </div>
       </div>
     </div>

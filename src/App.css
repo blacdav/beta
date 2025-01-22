@@ -111,6 +111,12 @@
   font-size: 34px;
 }
 
+.stats {
+  display: block;
+  width: 40%;
+  font-size: 18px;
+}
+
 @media (max-width: 576px) {
   .bgimg1 {
     background-image: url('../src/IMG/mobilebg.png');
@@ -223,6 +229,17 @@
 
 .loader {
   animation: boom duration timing-function 0s infinite direction both;
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .dashboard {
+    background-image: url('../src/IMG/dashboard-hero.png');
+    background-size: contain;
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
+    height: 50%;
+    /* width: auto; */
+  }
 }
 
 @keyframes boom {

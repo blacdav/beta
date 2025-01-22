@@ -15,7 +15,7 @@ const Dashboard = () => {
         {/* <section className='py-3 px-0 m-0'> */}
           {/* <div className='row'> */}
             <div className='d-flex dashboard w-100 h-auto d-grid col-4 align-items-center rounded-3 px-3 px-lg-5 m-0 mt-2 py-4'>
-              <div className='col-5 col-9 d-grid d-lg-none gap-1 gap-lg-2 hero_fs'>
+              <div className='col-9 d-grid d-lg-none gap-1 gap-lg-2 hero_fs'>
                 <small>#hackathonNFTs</small>
                 <p className='fw-semibold'>A Plarform that enebles holders to earn and display non-fungible token(NFT) certificates as proof of their educational archievements.</p>
                 <button className="w-50 d-block py-1 bg-primary text-white rounded-3">View Collection</button>
