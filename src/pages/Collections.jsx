@@ -36,7 +36,19 @@ const Collections = () => {
       </section>
 
       <aside className='d-grid gap-4 h-auto col-12 col-lg-3 pt-5'>
-        
+        <div className='d-inline-block border-0 mx-4 mx-md-5 mx-lg-0' style={{minWidth: '9%', flexShrink: 0}}>
+          <img src={cover} alt="cover" className='w-100 rounded-top-4' />
+          <div className='bg-bgblue pb-3 d-grid text-center justify-content-center rounded-bottom-4'>
+            <img src={profile} alt="avater" className='rounded-circle mb-1 mx-auto' style={{marginTop: '-1.5rem'}} />
+            <p className='m-0 fw-bold'>David David</p>
+            <p className='m-0'>ID: 80771162</p>
+            <p className='m-0'>Learn and Earn More NFTs</p>
+          </div>
+        </div>
+
+        <div>
+          space
+        </div>
 
         <TopCreators />
       </aside>

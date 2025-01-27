@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Outlet } from 'react-router-dom'
 import Sidebar from '../components/sidebar'
 import Header from '../components/header';
-import Loading from '../components/Loading';
+// import Loading from '../components/Loading';
 // import { useAuth } from '../auth/auth';
 
 const User = () => {
